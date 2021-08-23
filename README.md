@@ -1,4 +1,4 @@
-# Проект: AUTO-MAGAZINE-landing
+# Проект: Drawing App Landing
 
 
 
