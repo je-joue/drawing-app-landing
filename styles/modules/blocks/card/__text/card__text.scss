@@ -1,0 +1,4 @@
+.card__text {
+  @include item-regular-font(desktop);
+  line-height: 150%;
+}

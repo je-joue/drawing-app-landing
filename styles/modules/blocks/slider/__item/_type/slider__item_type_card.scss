@@ -1,8 +1,21 @@
-.slider__item_section_press {
-  display: flex;
-  width: 100%;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+.slider__item_type_card {
+  margin-right: 20px;
+  width: calc(50% - 20px / 2);
+}
+
+.slider__item_type_card:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__item_type_card {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slider__item_type_card {
+    width: 100%;
+    margin-right: 0;
+  }
 }

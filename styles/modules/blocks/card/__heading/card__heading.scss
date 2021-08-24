@@ -1,0 +1,6 @@
+.card__heading {
+  @include item-heading-font(desktop);
+  line-height: 119%;
+  min-height: 76px;
+  margin: 20px 0 40px 0;
+}

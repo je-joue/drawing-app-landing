@@ -1,0 +1,22 @@
+.slider__item_type_img {
+  margin-right: 25px;
+  width: calc((100% - 25px * 2) / 3);
+}
+
+.slider__item_type_img:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__item_type_img {
+    margin-right: 15px;
+    width: calc((100% - 15px * 2) / 3);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slider__item_type_img {
+    width: 100%;
+    margin-right: 0;
+  }
+}

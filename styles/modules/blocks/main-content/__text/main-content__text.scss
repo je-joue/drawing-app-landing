@@ -1,0 +1,35 @@
+.main-content__text {
+  @include reset-text;
+  margin: 120px 0 120px 0;
+  font-size: 4.1vw;
+  line-height: 115%;
+  font-weight: 600;
+  color: #111111;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-content__text {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content__text {
+    margin: 70px 30px 70px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-content__text {
+    font-size: calc(33 / 768 * 100vw);
+    line-height: 112%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-content__text {
+    margin: 70px 20px 70px 20px;
+    font-size: 26px;
+    line-height: 119%;
+  }
+}

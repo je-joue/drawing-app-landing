@@ -1,10 +1,12 @@
 $element-heading-font-size: (
   "desktop": 32px,
+  "tablet": 26px,
   "mobile": 26px,
 );
 
 $element-regular-font-size: (
-  "desktop": 18px,
+  "desktop": 16px,
+  "tablet": 15px,
   "mobile": 15px,
 );
 
@@ -37,15 +39,16 @@ $btn-text-size: (
 );
 
 @mixin item-heading-font($screen-size) {
+  @include reset-text;
   font-weight: 600;
   color: #111111;
   font-size: map.get($element-heading-font-size, $screen-size);
-  line-height: 119%;
 }
 
 @mixin item-regular-font($screen-size) {
-  font-weight: 600;
-  color: #111111;
+  @include reset-text;
+  font-weight: 400;
+  color: rgba(17, 17, 17, .6);
   font-size: map.get($element-regular-font-size, $screen-size);
 }
 

@@ -17,6 +17,14 @@
 @import './modules/blocks/main/main.scss';
 
 @import './modules/blocks/main-content/main-content.scss';
+@import './modules/blocks/main-content/__text/main-content__text.scss';
+
+@import './modules/blocks/card/card.scss';
+@import './modules/blocks/card/__heading/card__heading.scss';
+@import './modules/blocks/card/__text/card__text.scss';
+@import './modules/blocks/card/__text/_size/card__text_size_l.scss';
+
+@import './modules/blocks/slider-img/slider-img.scss';
 
 @import './modules/blocks/slider/slider.scss';
 @import './modules/blocks/slider/__track/slider__track.scss';

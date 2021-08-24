@@ -1,22 +1,22 @@
 .main {
-  padding: 60px 11vw 8.5vw 11vw;
+  padding: 60px 11vw 0 11vw;
   min-height: 500px;
 }
 
 @media screen and (min-width: 1440px) {
   .main {
-    padding: 60px 160px 120px 160px;
+    padding: 60px 160px 0 160px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main {
-    padding: 70px 20px 70px 20px;
+    padding: 70px 20px 0 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .main {
-    padding: 70px 0 70px 0;
+    padding: 70px 0 0 0;
   }
 }
