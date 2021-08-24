@@ -1,0 +1,36 @@
+.header__text {
+  @include reset-text;
+  margin-bottom: 108px;
+  width: 40%;
+  min-width: 450px;
+  font-size: 18px;
+  line-height: 144%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7);
+}
+
+@media screen and (max-width: 768px) {
+  .header__text {
+    margin-bottom: calc(250 / 768 * 100vw);
+    width: calc(360 / 768 * 100vw);
+    min-width: 0;
+    font-size: calc(15 / 768 * 100vw);
+    line-height: 133%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .header__text {
+    margin-bottom: calc(210 / 768 * 100vw);
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__text {
+    margin-bottom: 50px;
+    width: 100%;
+    min-width: 0;
+    line-height: 125%;
+  }
+}

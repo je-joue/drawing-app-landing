@@ -1,0 +1,127 @@
+$element-heading-font-size: (
+  "desktop": 32px,
+  "mobile": 26px,
+);
+
+$element-regular-font-size: (
+  "desktop": 18px,
+  "mobile": 15px,
+);
+
+$btn-background-color: (
+  "dark-theme": #ffffff,
+  "light-theme": #222222,
+);
+
+$btn-text-color: (
+  "dark-theme": #222222,
+  "light-theme": #ffffff,
+);
+
+$btn-height: (
+  "desktop": 54px,
+  "tablet": 48px,
+  "mobile": 44px,
+);
+
+$btn-width: (
+  "desktop": 240px,
+  "tablet": 240px,
+  "mobile": 260px,
+);
+
+$btn-text-size: (
+  "desktop": 16px,
+  "tablet": 14px,
+  "mobile": 12px,
+);
+
+@mixin item-heading-font($screen-size) {
+  font-weight: 600;
+  color: #111111;
+  font-size: map.get($element-heading-font-size, $screen-size);
+  line-height: 119%;
+}
+
+@mixin item-regular-font($screen-size) {
+  font-weight: 600;
+  color: #111111;
+  font-size: map.get($element-regular-font-size, $screen-size);
+}
+
+@mixin btn($theme-color, $screen-size) {
+  height: map.get($btn-height, $screen-size);
+  width: map.get($btn-width, $screen-size);
+  border-radius: 8px;
+  background-color: map.get($btn-background-color, $theme-color);
+  font-size: map.get($btn-text-size, $theme-color);
+  line-height: map.get($btn-height, $screen-size);
+  color: map.get($btn-text-color, $theme-color);
+  text-align: center;
+  @include reset-link;
+}
+
+@mixin phone-img {
+  filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, .25));
+  border-radius: 30px;
+}
+
+
+
+
+// @mixin section-padding($padding) {
+//   padding-left: map.get($side-padding, $padding);
+//   padding-right: map.get($side-padding, $padding);
+// }
+
+// @mixin grid-desktop {
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 50% 50%;
+// }
+
+// @mixin grid-mobile {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+//   align-items: center;
+//   // grid-template-columns: 100%;
+// }
+
+// @mixin section-title {
+//   font-weight: 400;
+//   line-height: 100%;
+// }
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin reset-text {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+@mixin hover-link {
+  opacity: 0.6;
+}
+
+@mixin hover-button {
+  background: map.get($color, "yellow");
+  color: map.get($color, "dark");
+}

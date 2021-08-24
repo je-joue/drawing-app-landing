@@ -1,0 +1,17 @@
+.header__link {
+  @include btn(dark-theme, desktop);
+}
+
+@media screen and (max-width: 768px) {
+  .header__link {
+    @include btn(dark-theme, tablet);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__link {
+    @include btn(dark-theme, mobile);
+    max-width: 100%;
+    align-self: center;
+  }
+}

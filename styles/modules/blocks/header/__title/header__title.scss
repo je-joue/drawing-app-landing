@@ -1,0 +1,30 @@
+.header__title {
+  @include reset-text;
+  margin-bottom: 28px;
+  font-size: 4.1vw;
+  line-height: 115%;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    margin-bottom: 20px;
+    font-size: calc(33 / 768 * 100vw);
+    line-height: 112%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 121%;
+  }
+}

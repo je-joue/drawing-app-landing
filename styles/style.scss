@@ -1,0 +1,25 @@
+@use "sass:map";
+@import '../vendor/fonts.css';
+@import '../vendor/normalize.css';
+@import './modules/variables.scss';
+@import './modules/mixins.scss';
+
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__content/page__content.scss';
+
+@import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__img/header__img.scss';
+@import './modules/blocks/header/__link/header__link.scss';
+@import './modules/blocks/header/__logo/header__logo.scss';
+@import './modules/blocks/header/__text/header__text.scss';
+@import './modules/blocks/header/__title/header__title.scss';
+
+@import './modules/blocks/main/main.scss';
+
+@import './modules/blocks/main-content/main-content.scss';
+
+@import './modules/blocks/slider/slider.scss';
+@import './modules/blocks/slider/__track/slider__track.scss';
+@import './modules/blocks/slider/__item/slider__item.scss';
+@import './modules/blocks/slider/__item/_type/slider__item_type_card.scss';
+@import './modules/blocks/slider/__item/_type/slider__item_type_img.scss';

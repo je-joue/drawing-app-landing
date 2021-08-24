@@ -1,0 +1,52 @@
+.header__img {
+  position: absolute;
+  right: 11vw;
+  bottom: -30px;
+  @include phone-img;
+  // background-image: url(../images/phone_intro.svg);
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+  // background-position-x: center;
+  // background-position-y: center;
+  width: 22vw;
+  height: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__img {
+    right: 220px;
+    width: 311px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__img {
+    right: 45px;
+    bottom: -20px;
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__img {
+    right: 45px;
+    width: calc(250 / 768 * 100vw);
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .header__img {
+    right: 20px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__img {
+    position: static;
+    width: 260px;
+    max-width: 100%;
+    padding-bottom: 50px;
+    align-self: center;
+  }
+}
